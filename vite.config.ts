@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     VueRouter({
-      /* options */
+      dts: './typed-router.d.ts'
     }),
     // ⚠️ Vue must be placed after VueRouter()
     vue(),
