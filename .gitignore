@@ -28,3 +28,11 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# Pocketbase
+/pocketbase/*
+!/pocketbase/pb_migrations
+
+typed-router.d.ts
+
+.env.production
