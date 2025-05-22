@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router/auto'
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
