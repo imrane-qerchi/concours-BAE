@@ -30,8 +30,8 @@ Il permet aux étudiants de s’enregistrer via un formulaire sécurisé, connec
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/<TON-UTILISATEUR>/inscription-concours.git
-cd inscription-concours
+git clone https://github.com/imrane-qerchi/concours-BAE.git
+cd concours-BAE
 npm install
 npm run dev
 ```
