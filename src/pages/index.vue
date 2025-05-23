@@ -14,7 +14,6 @@ const handleSubmit = async () => {
   success.value = false
   error.value = ''
 
-  // 🔒 Vérifie que l'email est bien universitaire
   const emailRegex = /^[a-zA-Z0-9._%+-]+@edu\.univ-fcomte\.fr$/
   if (!emailRegex.test(email.value)) {
     error.value = 'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr).'
@@ -22,28 +21,40 @@ const handleSubmit = async () => {
   }
 
   try {
-    // 📤 Envoie les données à PocketBase
     await pb.collection('participants').create({
       prenom: prenom.value,
       nom: nom.value,
       email: email.value
     })
 
-    // ✅ Si tout se passe bien
     success.value = true
     prenom.value = ''
     nom.value = ''
     email.value = ''
   } catch (err: unknown) {
-    if (err instanceof Error) {
-      // 🔍 Affiche l'erreur exacte dans la console pour debug
-      console.error('[PocketBase error]', err.message)
+    console.error('[PocketBase error]', err)
 
-      // 👇 Temporairement, on affiche le message brut pour le voir à l’écran aussi
-      error.value = err.message
-    } else {
-      error.value = 'Une erreur inconnue est survenue.'
+    let message = 'Une erreur est survenue lors de l’inscription. Veuillez réessayer.'
+
+    if (
+      typeof err === 'object' &&
+      err !== null &&
+      'response' in err &&
+      typeof (err as { response: unknown }).response === 'object' &&
+      (err as { response: { data?: unknown } }).response?.data &&
+      typeof (err as { response: { data?: unknown } }).response?.data === 'object'
+    ) {
+      const data = (err as { response: { data: Record<string, { message: string }> } }).response
+        .data
+
+      const emailError = data?.email?.message
+
+      if (emailError?.toLowerCase().includes('unique')) {
+        message = 'Cette adresse e-mail a déjà été utilisée pour participer au concours.'
+      }
     }
+
+    error.value = message
   }
 }
 </script>
