@@ -75,7 +75,7 @@ const handleSubmit = async () => {
           Activez votre compte sur
           <a href="https://alumni.univ-fcomte.fr" class="underline text-yellow-200" target="_blank"
             >le réseau Alumni</a
-          >.
+          > via vos identifiants ENT.
         </li>
         <li>
           Compléter votre profil via la
