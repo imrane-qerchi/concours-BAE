@@ -14,11 +14,23 @@ const handleSubmit = async () => {
   success.value = false
   error.value = ''
 
-  // 🔒 Vérification de domaine
   const emailRegex = /^[a-zA-Z0-9._%+-]+@edu\.univ-fcomte\.fr$/
   if (!emailRegex.test(email.value)) {
     error.value = 'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr).'
     return
+  }
+
+  try {
+    // 🔍 Vérifier si l'e-mail existe déjà
+    await pb.collection('participants').getFirstListItem(`email = "${email.value}"`)
+    error.value = 'Cette adresse e-mail a déjà été utilisée pour participer.'
+    return
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      error.value = err.message
+    } else {
+      error.value = 'Erreur inconnue'
+    }
   }
 
   try {
@@ -34,9 +46,7 @@ const handleSubmit = async () => {
     email.value = ''
   } catch (err: unknown) {
     if (err instanceof Error) {
-      if (err.message.includes('autocancelled')) {
-        return
-      }
+      if (err.message.includes('autocancelled')) return
       error.value = err.message
     } else {
       error.value = 'Erreur inconnue'
