@@ -14,7 +14,7 @@ const handleSubmit = async () => {
   success.value = false
   error.value = ''
 
-  // Vérification du domaine de l'adresse e-mail
+  // 🔒 Vérifie que l'email est bien universitaire
   const emailRegex = /^[a-zA-Z0-9._%+-]+@edu\.univ-fcomte\.fr$/
   if (!emailRegex.test(email.value)) {
     error.value = 'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr).'
@@ -22,31 +22,25 @@ const handleSubmit = async () => {
   }
 
   try {
+    // 📤 Envoie les données à PocketBase
     await pb.collection('participants').create({
       prenom: prenom.value,
       nom: nom.value,
       email: email.value
     })
 
+    // ✅ Si tout se passe bien
     success.value = true
     prenom.value = ''
     nom.value = ''
     email.value = ''
   } catch (err: unknown) {
     if (err instanceof Error) {
-      const msg = err.message.toLowerCase()
+      // 🔍 Affiche l'erreur exacte dans la console pour debug
+      console.error('[PocketBase error]', err.message)
 
-      // Erreur autocancelled (on ignore)
-      if (msg.includes('autocancelled')) return
-
-      // Erreur d'unicité e-mail
-      if (msg.includes('email') && msg.includes('unique')) {
-        error.value = 'Cette adresse e-mail a déjà été utilisée pour participer au concours.'
-        return
-      }
-
-      // Erreur générique
-      error.value = 'Une erreur est survenue lors de l’inscription. Veuillez réessayer.'
+      // 👇 Temporairement, on affiche le message brut pour le voir à l’écran aussi
+      error.value = err.message
     } else {
       error.value = 'Une erreur inconnue est survenue.'
     }
