@@ -14,6 +14,13 @@ const handleSubmit = async () => {
   success.value = false
   error.value = ''
 
+  // 🔒 Vérification de domaine
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@edu\.univ-fcomte\.fr$/
+  if (!emailRegex.test(email.value)) {
+    error.value = 'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr).'
+    return
+  }
+
   try {
     await pb.collection('participants').create({
       prenom: prenom.value,
@@ -33,6 +40,7 @@ const handleSubmit = async () => {
     }
   }
 }
+
 </script>
 
 <template>
