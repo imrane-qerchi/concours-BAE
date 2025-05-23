@@ -25,7 +25,7 @@ const handleSubmit = async () => {
     await pb.collection('participants').create({
       prenom: prenom.value,
       nom: nom.value,
-      email: email.value,
+      email: email.value
     })
 
     success.value = true
@@ -34,27 +34,35 @@ const handleSubmit = async () => {
     email.value = ''
   } catch (err: unknown) {
     if (err instanceof Error) {
+      if (err.message.includes('autocancelled')) {
+        return
+      }
       error.value = err.message
     } else {
       error.value = 'Erreur inconnue'
     }
   }
 }
-
 </script>
 
 <template>
   <div class="min-h-screen bg-gray-100 px-4 py-10 flex flex-col items-center">
     <!-- Étapes -->
     <section class="max-w-3xl w-full mb-10 bg-white p-6 rounded-xl shadow">
-      <h2 class="text-xl font-semibold text-purple-800 mb-4 text-center">Étapes avant de vous inscrire</h2>
+      <h2 class="text-xl font-semibold text-purple-800 mb-4 text-center">
+        Étapes avant de vous inscrire
+      </h2>
       <ol class="list-decimal list-inside space-y-2 text-gray-800">
         <li>
           <strong>Activer votre compte</strong> sur le
-          <a href="https://alumni.univ-fcomte.fr" target="_blank" class="text-purple-700 underline">réseau Alumni</a> avec vos identifiants ENT.
+          <a href="https://alumni.univ-fcomte.fr" target="_blank" class="text-purple-700 underline"
+            >réseau Alumni</a
+          >
+          avec vos identifiants ENT.
         </li>
         <li>
-          <strong>Connecter votre profil LinkedIn</strong> dans votre espace personnel sur le réseau.
+          <strong>Connecter votre profil LinkedIn</strong> dans votre espace personnel sur le
+          réseau.
         </li>
         <li>
           <strong>Revenir ici</strong> pour compléter le formulaire d’inscription au jeu concours.
@@ -102,9 +110,7 @@ const handleSubmit = async () => {
       <p v-if="success" class="mt-4 text-green-600 text-center font-semibold">
         ✅ Inscription réussie !
       </p>
-      <p v-if="error" class="mt-4 text-red-600 text-center font-semibold">
-        ⚠️ {{ error }}
-      </p>
+      <p v-if="error" class="mt-4 text-red-600 text-center font-semibold">⚠️ {{ error }}</p>
     </div>
   </div>
 </template>
