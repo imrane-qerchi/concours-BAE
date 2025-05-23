@@ -1,11 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/LOGO_UMLP.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/LOGO_UMLP.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeu concours - BAE</title>
+
+    <script>
+      const setFavicon = () => {
+        const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link')
+        favicon.rel = 'icon'
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        favicon.href = isDark ? '/logo-UMLP-white.png' : '/LOGO_UMLP.png'
+        document.head.appendChild(favicon)
+      }
+
+      setFavicon()
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setFavicon)
+    </script>
   </head>
+
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
