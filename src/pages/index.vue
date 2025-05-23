@@ -82,9 +82,9 @@ const handleSubmit = async () => {
           <a
             href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
             target="_blank"
-            class="underline text-yellow-200 font-medium"
+            class="underline text-yellow-200"
           >
-            fonctionnalité LinkedIn </a
+            fonctionnalité LinkedIn</a
           >.
         </li>
 
