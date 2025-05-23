@@ -77,7 +77,17 @@ const handleSubmit = async () => {
             >le réseau Alumni</a
           >.
         </li>
-        <li>Connectez votre compte LinkedIn dans votre espace personnel.</li>
+        <li>
+          Compléter votre profil via la
+          <a
+            href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
+            target="_blank"
+            class="underline text-yellow-200 font-medium"
+          >
+            fonctionnalité LinkedIn </a
+          >.
+        </li>
+
         <li>Remplissez le formulaire d’inscription ci-dessous.</li>
       </ol>
     </section>
