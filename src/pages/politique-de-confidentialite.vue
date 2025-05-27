@@ -97,7 +97,7 @@
           <ul class="list-disc list-inside ml-4 space-y-1">
             <li>L’équipe du Réseau Alumni de l’UMLP,</li>
             <li>
-              Les services partenaires du concours (OSE, SSE, Campus Sport) si nécessaire à
+              Les services partenaires du concours (OSE, SSE, Campus Sports) si nécessaire à
               l’organisation du tirage au sort ou de la remise des lots.
             </li>
           </ul>

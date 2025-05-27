@@ -24,7 +24,7 @@
             <li>
               le service <strong class="text-yellow-200">SSE</strong> (Service de Santé Étudiante),
             </li>
-            <li>et le service <strong class="text-yellow-200">Campus Sport</strong>.</li>
+            <li>et le service <strong class="text-yellow-200">Campus Sports</strong>.</li>
           </ul>
           <p class="mt-2">
             <strong class="text-yellow-200">Adresse :</strong> 32 Avenue de l'Observatoire, 25000
@@ -107,7 +107,7 @@
             comprenant :
           </p>
           <ul class="list-disc list-inside ml-4 space-y-1">
-            <li>un kit sport offert par Campus Sport,</li>
+            <li>un kit sport offert par Campus Sports,</li>
             <li>une séance de coaching carrière par le service OSE,</li>
             <li>une séance bien-être étudiant proposée par le SSE.</li>
           </ul>

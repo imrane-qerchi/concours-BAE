@@ -93,7 +93,7 @@
             en partenariat avec les services
             <strong class="text-yellow-200">OSE</strong> (Orientation Stages Emploi),
             <strong class="text-yellow-200">SSE</strong> (Santé Étudiante) et
-            <strong class="text-yellow-200">Campus Sport</strong>.
+            <strong class="text-yellow-200">Campus Sports</strong>.
           </p>
           <p class="mt-2">
             La participation est ouverte exclusivement aux étudiants inscrits à l’UMLP pour l’année
