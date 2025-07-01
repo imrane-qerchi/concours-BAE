@@ -132,9 +132,11 @@ const handleSubmit = async () => {
 
       <!-- Messages -->
       <p v-if="success" class="mt-4 text-green-600 text-center font-medium">
-        ✅ Inscription réussie ! Bonne chance 🍀
+        ✅ Inscription validée ! Une confirmation de ta participation te sera adressée sur ton e-mail universitaire.
       </p>
       <p v-if="error" class="mt-4 text-red-600 text-center font-medium">⚠️ {{ error }}</p>
     </section>
   </div>
 </template>
+
+
