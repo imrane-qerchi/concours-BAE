@@ -77,7 +77,7 @@ const handleSubmit = async () => {
       <!-- Formulaire par-dessus -->
       <section class="relative z-10 bg-white text-[#3F1A0D] rounded-2xl shadow-xl p-8">
         <!-- Titre principal -->
-        <h2 class="text-2xl font-extrabold text-center text-[#076879] mb-2 uppercase">ÉTAPE N°2</h2>
+        <h2 class="text-2xl font-[Lobster] font-extrabold text-center text-[#076879] mb-2 uppercase">ÉTAPE N°2</h2>
 
         <!-- Sous-titre -->
         <p class="text-center text-[#3F1A0D] mb-6">
