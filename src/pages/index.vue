@@ -130,7 +130,7 @@ const handleSubmit = async () => {
       <!-- Pop-up de confirmation -->
       <div
         v-if="showPopup"
-        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        class="fixed inset-0 backdrop-blur-sm bg-white/30 flex items-center justify-center z-50"
       >
         <div class="bg-white rounded-xl p-6 max-w-md text-center text-[#3F1A0D] shadow-2xl">
           <h3 class="text-2xl font-bold mb-2">🎉 Inscription validée !</h3>
