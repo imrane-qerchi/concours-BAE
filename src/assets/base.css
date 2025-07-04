@@ -7,3 +7,13 @@ body {
   font-family: 'Poppins', sans-serif;
   font-family: 'Lobster', cursive;
 }
+
+.background-dynamic {
+  background-image: url('/background.jpg'); /* mobile/tablette par défaut */
+}
+
+@media (min-width: 1024px) {
+  .background-dynamic {
+    background-image: url('/background-icones-desktop.png'); /* desktop */
+  }
+}
