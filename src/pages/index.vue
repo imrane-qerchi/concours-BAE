@@ -52,89 +52,102 @@ const handleSubmit = async () => {
 
 <template>
   <div
-    class="min-h-screen w-full text-white py-12 px-4"
-    style="background: linear-gradient(to bottom right, #ea017e, #771e82, #147461)"
+    class="min-h-screen w-full text-white py-12 px-4 bg-cover bg-center bg-no-repeat background-dynamic"
   >
-    <!-- Titre -->
-    <section class="text-center mb-12">
-      <h1
-        class="text-5xl lg:text-6xl font-extrabold uppercase tracking-tight italic drop-shadow-md"
-      >
-        Bienvenue au concours BAE
-      </h1>
-      <p class="text-xl mt-2 text-yellow-200 font-medium">
-        Septembre 2025 — Université Marie et Louis Pasteur
-      </p>
-    </section>
-
-    <!-- Étapes -->
-    <section class="max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-xl p-6 mb-10">
-      <h2 class="text-2xl font-semibold text-yellow-300 text-center mb-4">Étapes à suivre</h2>
-      <ol class="list-decimal list-inside space-y-3 text-white text-lg font-light">
-        <li>
-          Activez votre compte sur
-          <a href="https://alumni.univ-fcomte.fr" class="underline text-yellow-200" target="_blank"
-            >le réseau Alumni</a
-          >
-          via vos identifiants ENT.
-        </li>
-        <li>
-          Compléter votre profil via la
-          <a
-            href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
-            target="_blank"
-            class="underline text-yellow-200"
-          >
-            fonctionnalité LinkedIn</a
-          >.
-        </li>
-
-        <li>Remplissez le formulaire d’inscription ci-dessous.</li>
-      </ol>
-    </section>
-
-    <!-- Formulaire -->
-    <section class="max-w-xl mx-auto bg-white text-black rounded-2xl shadow-xl p-8">
-      <h2 class="text-2xl font-bold text-center text-purple-800 mb-6 uppercase">
-        Formulaire d'inscription
+    <!-- Étapes (titre général) -->
+    <section class="max-w-4xl mx-auto p-6 mt-80 mb-2 z-10 relative">
+      <h2 class="text-lg md:text-2xl font-bold text-[#3F1A0D] text-center mb-2">
+        Inscris toi et tente de remporter l’un des Success Kit* mis en jeu !
       </h2>
-
-      <form @submit.prevent="handleSubmit" class="space-y-4">
-        <input
-          v-model="prenom"
-          type="text"
-          placeholder="Prénom"
-          required
-          class="w-full border border-neutral-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-purple-500"
-        />
-        <input
-          v-model="nom"
-          type="text"
-          placeholder="Nom"
-          required
-          class="w-full border border-neutral-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-purple-500"
-        />
-        <input
-          v-model="email"
-          type="email"
-          placeholder="Adresse e-mail universitaire"
-          required
-          class="w-full border border-neutral-300 px-4 py-3 rounded-lg focus:ring-2 focus:ring-purple-500"
-        />
-
-        <button
-          type="submit"
-          class="w-full bg-purple-700 text-white py-3 rounded-lg hover:bg-purple-800 transition font-semibold"
-        >
-          M'inscrire
-        </button>
-      </form>
-
-      <!-- Messages -->
-      <p v-if="success" class="mt-4 text-green-600 text-center font-medium">
-        ✅ Inscription réussie ! Bonne chance 🍀
+      <p class="text-sm text-center text-[#3F1A0D]">
+        * Séance de Coaching, Prévention Santé et Essentiels sportifs dans chaque Success Kit
       </p>
-      <p v-if="error" class="mt-4 text-red-600 text-center font-medium">⚠️ {{ error }}</p>
+    </section>
+
+    <!-- Formulaire + image panneau -->
+    <div class="relative max-w-xl mx-auto mt-6">
+      <!-- Image panneau décorative -->
+      <img
+        src="/panneau.png"
+        alt="Panneau"
+        class="absolute -top-122 left-1/2 -translate-x-1/2 z-0 w-80 pointer-events-none select-none"
+      />
+
+      <!-- Formulaire par-dessus -->
+      <section class="relative z-10 bg-white text-[#3F1A0D] rounded-2xl shadow-xl p-8 mb-16">
+        <!-- Titre principal -->
+        <h2
+          class="text-2xl font-[Lobster] font-extrabold text-center text-[#076879] mb-2 uppercase"
+        >
+          ÉTAPE N°2
+        </h2>
+
+        <!-- Sous-titre -->
+        <p class="text-center text-[#3F1A0D] mb-6">
+          Pour participer au tirage au sort,
+          <span class="font-bold">remplis le formulaire</span>
+          ci-dessous avec les informations demandées
+        </p>
+
+        <!-- Formulaire -->
+        <form @submit.prevent="handleSubmit" class="space-y-4">
+          <input
+            v-model="prenom"
+            type="text"
+            placeholder="Prénom"
+            required
+            class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#742581]"
+          />
+          <input
+            v-model="nom"
+            type="text"
+            placeholder="Nom"
+            required
+            class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#742581]"
+          />
+          <input
+            v-model="email"
+            type="email"
+            placeholder="Adresse e-mail universitaire"
+            required
+            class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#742581]"
+          />
+
+          <button
+            type="submit"
+            class="w-full bg-[#742581] text-white py-3 rounded-lg hover:bg-[#D90D80] transition font-bold uppercase"
+          >
+            Je m’inscris au tirage au sort
+          </button>
+        </form>
+
+        <!-- Messages -->
+        <p v-if="success" class="mt-4 text-green-600 text-center font-medium">
+          ✅ Inscription validée ! Une confirmation de ta participation te sera adressée sur ton
+          e-mail universitaire.
+        </p>
+        <p v-if="error" class="mt-4 text-red-600 text-center font-medium">⚠️ {{ error }}</p>
+      </section>
+    </div>
+
+    <!-- Étapes (titre général) -->
+    <section class="max-w-4xl mx-auto p-5 mt-4">
+      <h2 class="text-lg text-[#3F1A0D] text-center mb-6">
+        <b>Prochaine et dernière étape</b> indispensable pour la bonne prise en compte de ta
+        participation : n’oublie pas de <b>mettre à jour les informations de ton profil</b> sur ton
+        compte Alumni.
+      </h2>
+      <p class="text-lg text-center text-[#3F1A0D]">
+        Besoin d'aide ? Visionne
+        <a
+          href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline hover:text-[#742581] transition"
+          >ce petit tutoriel</a
+        >
+        !
+      </p>
     </section>
   </div>
 </template>

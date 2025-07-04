@@ -31,7 +31,8 @@ coverage
 
 # Pocketbase
 /pocketbase/*
-!/pocketbase/pb_migrations
+!/pocketbase/pb_migrations/
+/pocketbase/pb_data/auxiliary.db
 
 typed-router.d.ts
 

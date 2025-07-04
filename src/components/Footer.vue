@@ -1,56 +1,36 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <footer class="bg-[#56205A] text-white py-8 px-6 w-full">
+  <footer class="bg-[#742581] text-white py-8 px-6 w-full">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-6">
-      <!-- Logo accueil -->
+      <!-- Logo à gauche -->
       <a href="/" class="flex-shrink-0">
         <img src="/logo-UMLP-white.png" alt="Accueil" class="h-20 w-auto" />
       </a>
 
-      <div class="flex justify-center lg:gap-10 gap-6 my-5">
+      <!-- Bouton contact (mobile : en haut + bas marges) -->
+      <div class="flex-shrink-0 order-1 lg:order-3 mt-6 mb-6 lg:mt-0 lg:mb-0">
         <a
-          href="https://www.linkedin.com/school/universite-de-franche-comte/"
-          target="_blank"
-          aria-label="LinkedIn"
-          class="hover:opacity-80"
+          href="mailto:contact-success-road@univ-fcomte.fr"
+          class="bg-white text-[#742581] text-xl px-6 py-3 rounded-xl hover:bg-gray-200 transition"
         >
-          <img src="/linkedin.svg" alt="LinkedIn" class="h-15 w-15" />
-        </a>
-        <a
-          href="https://www.instagram.com/fc_univ/"
-          target="_blank"
-          aria-label="Instagram"
-          class="hover:opacity-80"
-        >
-          <img src="/instagram.svg" alt="Instagram" class="h-15 w-15" />
-        </a>
-        <a
-          href="https://www.facebook.com/universiteFrancheComte/"
-          target="_blank"
-          aria-label="Facebook"
-          class="hover:opacity-80"
-        >
-          <img src="/facebook.svg" alt="Facebook" class="h-15 w-15" />
+          Contact
         </a>
       </div>
 
       <!-- Liens légaux -->
-      <div class="text-sm text-center space-y-1">
-        <div class="flex gap-3 flex-wrap justify-center">
+      <div class="text-sm text-center lg:text-left order-2 lg:order-2">
+        <div class="flex gap-3 flex-wrap justify-center lg:justify-center mb-2">
+          <RouterLink to="/mentions-legales" class="hover:underline">Mentions légales</RouterLink>
           <RouterLink to="/conditions-generales-d-utilisation" class="hover:underline"
             >CGU</RouterLink
           >
-          <RouterLink to="/mentions-legales" class="hover:underline">Mentions légales</RouterLink>
-          <RouterLink to="/politique-de-confidentialite" class="hover:underline">
-            Politique de confidentialité
-          </RouterLink>
+          <RouterLink to="/politique-de-confidentialite" class="hover:underline"
+            >Politique de confidentialité</RouterLink
+          >
         </div>
-        <p class="mt-5">
-          Contact :
-          <a href="mailto:alumni@univ-fcomte.fr" class="underline">alumni@univ-fcomte.fr</a>
+        <p class="mt-5 text-gray-300 text-center lg:text-center">
+          © Université Marie et Louis Pasteur – 2025
         </p>
-
-        <p class="mt-5 text-gray-300">© Université Marie et Louis Pasteur – 2025</p>
       </div>
     </div>
   </footer>
