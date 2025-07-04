@@ -192,21 +192,26 @@ const handleSubmit = async () => {
       </p>
     </section>
 
-    <!-- Pop-up Tutoriel sur fond noir -->
+    <!-- Pop-up Tutoriel avec fond noir, croix externe et fermeture au clic extérieur -->
     <div
       v-if="showTutorial"
+      @click.self="showTutorial = false"
       class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
     >
-      <div class="relative bg-white max-w-3xl w-full rounded-lg shadow-2xl overflow-hidden">
-        <!-- Bouton de fermeture -->
-        <button
-          @click="showTutorial = false"
-          class="absolute top-2 right-2 text-[#742581] text-xl font-bold hover:text-[#D90D80]"
-          aria-label="Fermer"
-        >
-          ✕
-        </button>
+      <!-- Bouton de fermeture externe -->
+      <button
+        @click="showTutorial = false"
+        class="absolute top-4 right-4 text-white text-3xl font-bold hover:text-[#D90D80] z-50"
+        aria-label="Fermer"
+      >
+        ✕
+      </button>
 
+      <!-- Conteneur de la vidéo -->
+      <div
+        class="relative bg-white max-w-3xl w-full rounded-lg shadow-2xl overflow-hidden"
+        @click.stop
+      >
         <!-- Vidéo locale -->
         <video controls autoplay class="w-full h-auto rounded-b-lg">
           <source src="/videos/tutoriel-alumni.mp4" type="video/mp4" />
