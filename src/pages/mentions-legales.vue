@@ -15,7 +15,6 @@
             <strong class="font-bold">Réseau Alumni de l’Université Marie et Louis Pasteur</strong
             >,<br />
             32 avenue de l’Observatoire, 25000 Besançon – France.<br />
-            <strong class="font-bold">Téléphone :</strong> +33 3 81 66 58 20<br />
             <strong class="font-bold">Email : </strong>
             <a href="mailto:alumni@univ-fcomte.fr" class="underline text-[#6d4638]"
               >alumni@univ-fcomte.fr</a
@@ -34,13 +33,9 @@
         <div>
           <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Hébergeur</h2>
           <p>
-            Le site est hébergé par la société <strong class="font-bold">Netlify</strong><br />
-            <strong class="font-bold">Adresse :</strong> 2325 3rd Street, Suite 215, San Francisco,
-            CA 94107, États-Unis.<br />
-            <strong class="font-bold">Téléphone :</strong> +1 844-899-7312<br />
-            <strong class="font-bold">Site Web : </strong>
-            <a href="https://www.netlify.com" target="_blank" class="underline text-[#6d4638]"
-              >www.netlify.com</a
+            Le site est hébergé par la Direction des Systèmes d'Information et du Numérique (DSIN) de l’Université Marie et Louis Pasteur :
+            <a href="mailto:webmaster-dsin@univ-fcomte.fr" target="_blank" class="underline text-[#6d4638]"
+              >webmaster-dsin@univ-fcomte.fr</a
             >
           </p>
         </div>
