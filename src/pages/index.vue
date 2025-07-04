@@ -74,7 +74,7 @@ const handleSubmit = async () => {
       />
 
       <!-- Formulaire par-dessus -->
-      <section class="relative z-10 bg-white text-[#3F1A0D] rounded-2xl shadow-xl p-8 mb-16">
+      <section class="relative z-10 bg-white text-[#3F1A0D] rounded-2xl shadow-xl p-8 mb-7">
         <!-- Titre principal -->
         <h2
           class="text-2xl font-[Lobster] font-extrabold text-center text-[#076879] mb-2 uppercase"
@@ -84,9 +84,9 @@ const handleSubmit = async () => {
 
         <!-- Sous-titre -->
         <p class="text-center text-[#3F1A0D] mb-6">
-          Pour participer au tirage au sort,
+          Pour participer au tirage au sort,<br />
           <span class="font-bold">remplis le formulaire</span>
-          ci-dessous avec les informations demandées
+          ci-dessous.
         </p>
 
         <!-- Formulaire -->
@@ -131,20 +131,45 @@ const handleSubmit = async () => {
     </div>
 
     <!-- Étapes (titre général) -->
-    <section class="max-w-4xl mx-auto p-5 mt-4">
+    <section class="max-w-4xl mx-auto p-5">
+      <p class="text-lg text-center text-[#3F1A0D] mb-5">
+        📄 Consulte
+        <a
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline font-bold hover:text-[#742581] transition"
+          >le règlement de participation</a
+        >.
+      </p>
       <h2 class="text-lg text-[#3F1A0D] text-center mb-6">
         <b>Prochaine et dernière étape</b> indispensable pour la bonne prise en compte de ta
-        participation : n’oublie pas de <b>mettre à jour les informations de ton profil</b> sur ton
-        compte Alumni.
+        participation : n’oublie pas de <b>mettre à jour les informations de ton profil</b> sur
+        <a
+          href="https://alumni.univ-fcomte.fr/fr/profile/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline font-bold hover:text-[#742581] transition"
+        >
+          ton compte Alumni </a
+        >.
       </h2>
       <p class="text-lg text-center text-[#3F1A0D]">
-        Besoin d'aide ? Visionne
+        Besoin d'aide ?<br />🎬 Consulte
         <a
           href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
           target="_blank"
           rel="noopener noreferrer"
-          class="underline hover:text-[#742581] transition"
-          >ce petit tutoriel</a
+          class="underline font-bold hover:text-[#742581] transition"
+          >notre tutoriel</a
+        >
+        ou
+        <a
+          href="mailto:contact-success-road@univ-fcomte.fr"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline font-bold hover:text-[#742581] transition"
+          >contacte-nous</a
         >
         !
       </p>
