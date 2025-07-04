@@ -9,14 +9,21 @@
 
       <!-- Liens légaux -->
       <div class="text-sm text-center lg:text-left">
-        <div class="flex gap-3 flex-wrap justify-center lg:justify-center mb-2">
+        <div class="flex gap-2 flex-wrap justify-center lg:justify-center mb-2">
           <RouterLink to="/mentions-legales" class="hover:underline">Mentions légales</RouterLink>
-          <RouterLink to="/conditions-generales-d-utilisation" class="hover:underline"
-            >CGU</RouterLink
+          <span>|</span>
+          <a
+            href="https://alumni.univ-fcomte.fr/fr/terms-of-use"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:underline"
           >
-          <RouterLink to="/politique-de-confidentialite" class="hover:underline"
-            >Politique de confidentialité</RouterLink
-          >
+            CGU
+          </a>
+          <span>|</span>
+          <RouterLink to="/politique-de-confidentialite" class="hover:underline">
+            Politique de confidentialité
+          </RouterLink>
         </div>
         <p class="mt-5 text-gray-300 text-center lg:text-center">
           © Université Marie et Louis Pasteur – 2025
