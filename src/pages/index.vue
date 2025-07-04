@@ -9,13 +9,18 @@ const email = ref('')
 const success = ref(false)
 const error = ref('')
 
+const isLoading = ref(false)
+
 const handleSubmit = async () => {
   success.value = false
   error.value = ''
+  isLoading.value = true
 
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@edu\.univ-fcomte\.fr$/
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@(edu\.)?univ-fcomte\.fr$/
   if (!emailRegex.test(email.value)) {
-    error.value = 'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr).'
+    error.value =
+      'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr ou @univ-fcomte.fr).'
+    isLoading.value = false
     return
   }
 
@@ -46,6 +51,8 @@ const handleSubmit = async () => {
       }
     }
     error.value = message
+  } finally {
+    isLoading.value = false
   }
 }
 </script>
@@ -115,9 +122,11 @@ const handleSubmit = async () => {
 
           <button
             type="submit"
-            class="w-full bg-[#742581] text-white py-3 rounded-lg hover:bg-[#D90D80] transition font-bold uppercase"
+            :disabled="isLoading"
+            class="w-full bg-[#742581] text-white py-3 rounded-lg transition font-bold uppercase flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Je m’inscris au tirage au sort
+            <span v-if="isLoading">⏳ Chargement...</span>
+            <span v-else>Je m’inscris au tirage au sort</span>
           </button>
         </form>
 
