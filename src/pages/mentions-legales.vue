@@ -2,7 +2,7 @@
 <template>
   <div
     class="min-h-screen w-full text-white py-12 px-6"
-    style="background: linear-gradient(to bottom right, #ea017e, #771e82, #147461)"
+    style="background-image: url('/background.jpg')"
   >
     <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-xl p-8">
       <h1 class="text-3xl font-extrabold text-yellow-300 mb-8">Mentions légales</h1>
