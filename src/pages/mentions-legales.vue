@@ -1,99 +1,96 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div
-    class="min-h-screen w-full text-white py-12 px-6"
+    class="min-h-screen w-full text-black py-12 px-6"
     style="background-image: url('/background.jpg')"
   >
-    <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-xl p-8">
-      <h1 class="text-3xl font-extrabold text-yellow-300 mb-8">Mentions légales</h1>
+    <div class="max-w-4xl mx-auto rounded-xl p-8">
+      <h1 class="text-3xl font-extrabold text-[#3F1A0D] mb-8">Mentions légales</h1>
 
-      <section class="space-y-8 text-white text-lg font-light leading-relaxed">
+      <section class="space-y-8 text-black text-lg font-light leading-relaxed">
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Éditeur du site</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Éditeur du site</h2>
           <p>
             Le présent site est édité par le
-            <strong class="text-yellow-200"
-              >Réseau Alumni de l’Université Marie et Louis Pasteur</strong
+            <strong class="font-bold">Réseau Alumni de l’Université Marie et Louis Pasteur</strong
             >,<br />
             32 avenue de l’Observatoire, 25000 Besançon – France.<br />
-            <strong class="text-yellow-200">Téléphone :</strong> +33 3 81 66 58 20<br />
-            <strong class="text-yellow-200">Email :</strong>
-            <a href="mailto:alumni@univ-fcomte.fr" class="underline text-yellow-100"
+            <strong class="font-bold">Téléphone :</strong> +33 3 81 66 58 20<br />
+            <strong class="font-bold">Email : </strong>
+            <a href="mailto:alumni@univ-fcomte.fr" class="underline text-[#6d4638]"
               >alumni@univ-fcomte.fr</a
             >
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Responsable de la publication</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Responsable de la publication</h2>
           <p>
             La responsable de la publication est
-            <strong class="text-yellow-200">Anne Monneret</strong>, responsable du Réseau Alumni.
+            <strong class="font-bold">Anne Monneret</strong>, responsable du Réseau Alumni.
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Hébergeur</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Hébergeur</h2>
           <p>
-            Le site est hébergé par la société <strong class="text-yellow-200">Netlify</strong
-            ><br />
-            <strong class="text-yellow-200">Adresse :</strong> 2325 3rd Street, Suite 215, San
-            Francisco, CA 94107, États-Unis.<br />
-            <strong class="text-yellow-200">Téléphone :</strong> +1 844-899-7312<br />
-            <strong class="text-yellow-200">Site web :</strong>
-            <a href="https://www.netlify.com" target="_blank" class="underline text-yellow-100"
+            Le site est hébergé par la société <strong class="font-bold">Netlify</strong><br />
+            <strong class="font-bold">Adresse :</strong> 2325 3rd Street, Suite 215, San Francisco,
+            CA 94107, États-Unis.<br />
+            <strong class="font-bold">Téléphone :</strong> +1 844-899-7312<br />
+            <strong class="font-bold">Site Web : </strong>
+            <a href="https://www.netlify.com" target="_blank" class="underline text-[#6d4638]"
               >www.netlify.com</a
             >
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Développement du site</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Développement du site</h2>
           <p>
             Ce site a été conçu et développé en interne par l’équipe du
-            <strong class="text-yellow-200">Réseau Alumni de l’UMLP</strong>.
+            <strong class="font-bold">Réseau Alumni de l’UMLP</strong>.
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Données personnelles</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Données personnelles</h2>
           <p>
-            <strong class="text-yellow-200">Nature des données collectées :</strong> nom, prénom et
+            <strong class="font-bold">Nature des données collectées :</strong> nom, prénom et
             adresse e-mail universitaire. Ces données sont recueillies exclusivement aux fins de
             gestion des participations, communication avec les participants et contact des gagnants.
           </p>
           <p class="mt-2">
-            <strong class="text-yellow-200">Durée de conservation :</strong> les données seront
-            conservées pendant une durée maximale d’un (1) an à compter de la fin du concours.
+            <strong class="font-bold">Durée de conservation :</strong> les données seront conservées
+            pendant une durée maximale d’un (1) an à compter de la fin du concours.
           </p>
           <p class="mt-2">
-            <strong class="text-yellow-200">Droits des utilisateurs :</strong> conformément au RGPD,
+            <strong class="font-bold">Droits des utilisateurs :</strong> conformément au RGPD,
             chaque utilisateur dispose d’un droit d’accès, de rectification, d’opposition et de
             suppression concernant ses données. Ces droits peuvent être exercés en contactant :
-            <a href="mailto:alumni@univ-fcomte.fr" class="underline text-yellow-100"
+            <a href="mailto:alumni@univ-fcomte.fr" class="underline text-[#6d4638]"
               >alumni@univ-fcomte.fr</a
             >
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Cookies</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Cookies</h2>
           <p>
             Le site ne dépose aucun cookie et n’utilise aucun outil de suivi ou d’analyse de trafic.
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Jeu-concours</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Jeu-concours</h2>
           <p>
             Le jeu-concours est organisé par le
-            <strong class="text-yellow-200"
-              >Réseau Alumni de l’Université Marie et Louis Pasteur</strong
+            <strong class="font-bold">Réseau Alumni de l’Université Marie et Louis Pasteur</strong
             >,<br />
             en partenariat avec les services
-            <strong class="text-yellow-200">OSE</strong> (Orientation Stages Emploi),
-            <strong class="text-yellow-200">SSE</strong> (Santé Étudiante) et
-            <strong class="text-yellow-200">Campus Sports</strong>.
+            <strong class="font-bold">OSE</strong> (Orientation Stages Emploi),
+            <strong class="font-bold">SSE</strong> (Santé Étudiante) et
+            <strong class="font-bold">Campus Sports</strong>.
           </p>
           <p class="mt-2">
             La participation est ouverte exclusivement aux étudiants inscrits à l’UMLP pour l’année
@@ -107,21 +104,21 @@
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Propriété intellectuelle</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Propriété intellectuelle</h2>
           <p>
             L’ensemble des contenus présents sur le site (textes, visuels, illustrations,
             graphismes, logos, etc.) est la propriété exclusive du
-            <strong class="text-yellow-200">Réseau Alumni de l’UMLP</strong>. Toute reproduction ou
+            <strong class="font-bold">Réseau Alumni de l’UMLP</strong>. Toute reproduction ou
             utilisation, totale ou partielle, sans autorisation préalable est strictement interdite.
           </p>
         </div>
 
         <div>
-          <h2 class="text-2xl font-bold text-yellow-300 mb-2">Droit applicable</h2>
+          <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Droit applicable</h2>
           <p>
-            Le présent site est soumis au <strong class="text-yellow-200">droit français</strong>.
-            Tout litige relatif à son usage est de la compétence exclusive des
-            <strong class="text-yellow-200">tribunaux de Besançon</strong>.
+            Le présent site est soumis au <strong class="font-bold">droit français</strong>. Tout
+            litige relatif à son usage est de la compétence exclusive des
+            <strong class="font-bold">tribunaux de Besançon</strong>.
           </p>
         </div>
       </section>
