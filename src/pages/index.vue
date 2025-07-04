@@ -9,6 +9,7 @@ const email = ref('')
 const success = ref(false)
 const error = ref('')
 const showPopup = ref(false)
+const showTutorial = ref(false)
 
 const handleSubmit = async () => {
   showPopup.value = true
@@ -173,13 +174,12 @@ const handleSubmit = async () => {
       </h2>
       <p class="text-lg text-center text-[#3F1A0D]">
         Besoin d'aide ?<br />🎬 Consulte
-        <a
-          href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          @click="showTutorial = true"
           class="underline font-bold hover:text-[#742581] transition"
-          >notre tutoriel</a
         >
+          notre tutoriel
+        </button>
         ou
         <a
           href="mailto:contact-success-road@univ-fcomte.fr"
@@ -191,5 +191,28 @@ const handleSubmit = async () => {
         !
       </p>
     </section>
+
+    <!-- Pop-up Tutoriel sur fond noir -->
+    <div
+      v-if="showTutorial"
+      class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4"
+    >
+      <div class="relative bg-white max-w-3xl w-full rounded-lg shadow-2xl overflow-hidden">
+        <!-- Bouton de fermeture -->
+        <button
+          @click="showTutorial = false"
+          class="absolute top-2 right-2 text-[#742581] text-xl font-bold hover:text-[#D90D80]"
+          aria-label="Fermer"
+        >
+          ✕
+        </button>
+
+        <!-- Vidéo locale -->
+        <video controls autoplay class="w-full h-auto rounded-b-lg">
+          <source src="/videos/tutoriel-alumni.mp4" type="video/mp4" />
+          Ton navigateur ne supporte pas la lecture vidéo.
+        </video>
+      </div>
+    </div>
   </div>
 </template>
