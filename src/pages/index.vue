@@ -116,7 +116,7 @@ const handleSubmit = async () => {
 
           <button
             type="submit"
-            class="w-full bg-[#742581] text-white py-3 rounded-lg hover:bg-purple-800 transition font-bold uppercase"
+            class="w-full bg-[#742581] text-white py-3 rounded-lg hover:bg-[#D90D80] transition font-bold uppercase"
           >
             Je m’inscris au tirage au sort
           </button>
@@ -134,11 +134,20 @@ const handleSubmit = async () => {
     <!-- Étapes (titre général) -->
     <section class="max-w-4xl mx-auto p-5 mt-4">
       <h2 class="text-lg text-[#3F1A0D] text-center mb-6">
-        <b>Prochaine et dernière étape</b> indispensable pour la bonne prise en compte de ta participation
-        : n’oublie pas de <b>mettre à jour les informations de ton profil</b> sur ton compte Alumni.
+        <b>Prochaine et dernière étape</b> indispensable pour la bonne prise en compte de ta
+        participation : n’oublie pas de <b>mettre à jour les informations de ton profil</b> sur ton
+        compte Alumni.
       </h2>
       <p class="text-lg text-center text-[#3F1A0D]">
-        Besoin d'aide ? Visionne ce petit tutoriel !
+        Besoin d'aide ? Visionne
+        <a
+          href="https://alumni.univ-fcomte.fr/fr/article/tuto-alumni-completer-votre-profil-en-important-les-donnees-de-votre-compte-linkedin/19/02/2025/243"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline hover:text-[#742581] transition"
+          >ce petit tutoriel</a
+        >
+        !
       </p>
     </section>
   </div>
