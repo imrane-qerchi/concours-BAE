@@ -15,10 +15,6 @@
             <strong class="font-bold">l’Université Marie et Louis Pasteur</strong
             >,<br />
             1 Rue Claude Goudimel, 25000 Besançon – France.<br />
-            <strong class="font-bold">Email : </strong>
-            <a href="mailto:alumni@univ-fcomte.fr" class="underline text-[#6d4638]"
-              >alumni@univ-fcomte.fr</a
-            >
           </p>
         </div>
 
