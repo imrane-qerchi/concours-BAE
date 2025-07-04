@@ -8,19 +8,16 @@ const nom = ref('')
 const email = ref('')
 const success = ref(false)
 const error = ref('')
-
-const isLoading = ref(false)
+const showPopup = ref(false)
 
 const handleSubmit = async () => {
-  success.value = false
+  showPopup.value = true
   error.value = ''
-  isLoading.value = true
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@(edu\.)?univ-fcomte\.fr$/
   if (!emailRegex.test(email.value)) {
     error.value =
       'Veuillez utiliser votre adresse e-mail universitaire (@edu.univ-fcomte.fr ou @univ-fcomte.fr).'
-    isLoading.value = false
     return
   }
 
@@ -51,8 +48,6 @@ const handleSubmit = async () => {
       }
     }
     error.value = message
-  } finally {
-    isLoading.value = false
   }
 }
 </script>
@@ -122,21 +117,34 @@ const handleSubmit = async () => {
 
           <button
             type="submit"
-            :disabled="isLoading"
-            class="w-full bg-[#742581] text-white py-3 rounded-lg transition font-bold uppercase flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+            class="w-full bg-[#742581] text-white py-3 rounded-lg hover:bg-[#D90D80] transition font-bold uppercase"
           >
-            <span v-if="isLoading">⏳ Chargement...</span>
-            <span v-else>Je m’inscris au tirage au sort</span>
+            Je m’inscris au tirage au sort
           </button>
         </form>
 
         <!-- Messages -->
-        <p v-if="success" class="mt-4 text-green-600 text-center font-medium">
-          ✅ Inscription validée ! Une confirmation de ta participation te sera adressée sur ton
-          e-mail universitaire.
-        </p>
         <p v-if="error" class="mt-4 text-red-600 text-center font-medium">⚠️ {{ error }}</p>
       </section>
+
+      <!-- Pop-up de confirmation -->
+      <div
+        v-if="showPopup"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+      >
+        <div class="bg-white rounded-xl p-6 max-w-md text-center text-[#3F1A0D] shadow-2xl">
+          <h3 class="text-2xl font-bold mb-2">🎉 Inscription validée !</h3>
+          <p class="mb-4">
+            Une confirmation de ta participation te sera adressée sur ton e-mail universitaire.
+          </p>
+          <button
+            @click="showPopup = false"
+            class="bg-[#742581] text-white px-6 py-2 rounded-lg hover:bg-[#D90D80] transition font-bold"
+          >
+            Fermer
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- Étapes (titre général) -->
