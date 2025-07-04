@@ -12,8 +12,8 @@ const showPopup = ref(false)
 const showTutorial = ref(false)
 
 const handleSubmit = async () => {
-  showPopup.value = true
   error.value = ''
+  success.value = false
 
   const emailRegex = /^[a-zA-Z0-9._%+-]+@(edu\.)?univ-fcomte\.fr$/
   if (!emailRegex.test(email.value)) {
@@ -28,7 +28,10 @@ const handleSubmit = async () => {
       nom: nom.value,
       email: email.value
     })
+
     success.value = true
+    showPopup.value = true // ✅ Afficher le pop-up uniquement si l'inscription réussit
+
     prenom.value = ''
     nom.value = ''
     email.value = ''
