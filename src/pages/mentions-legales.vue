@@ -11,10 +11,10 @@
         <div>
           <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Éditeur du site</h2>
           <p>
-            Le présent site est édité par le
-            <strong class="font-bold">Réseau Alumni de l’Université Marie et Louis Pasteur</strong
+            Le présent site est édité par
+            <strong class="font-bold">l’Université Marie et Louis Pasteur</strong
             >,<br />
-            32 avenue de l’Observatoire, 25000 Besançon – France.<br />
+            1 Rue Claude Goudimel, 25000 Besançon – France.<br />
             <strong class="font-bold">Email : </strong>
             <a href="mailto:alumni@univ-fcomte.fr" class="underline text-[#6d4638]"
               >alumni@univ-fcomte.fr</a
@@ -25,15 +25,15 @@
         <div>
           <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Responsable de la publication</h2>
           <p>
-            La responsable de la publication est
-            <strong class="font-bold">Anne Monneret</strong>, responsable du Réseau Alumni.
+            Le responsable de la publication est
+            <strong class="font-bold">Hugues Daussy</strong>, président de l'Université Marie et Louis Pasteur.
           </p>
         </div>
 
         <div>
           <h2 class="text-2xl font-bold text-[#3F1A0D] mb-2">Hébergeur</h2>
           <p>
-            Le site est hébergé par la Direction des Systèmes d'Information et du Numérique (DSIN) de l’Université Marie et Louis Pasteur :
+            Le site est hébergé par la <strong class="font-bold">Direction des Systèmes d'Information et du Numérique (DSIN)</strong> de l’Université Marie et Louis Pasteur :
             <a href="mailto:webmaster-dsin@univ-fcomte.fr" target="_blank" class="underline text-[#6d4638]"
               >webmaster-dsin@univ-fcomte.fr</a
             >
