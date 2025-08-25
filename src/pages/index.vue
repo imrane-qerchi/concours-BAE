@@ -66,7 +66,7 @@ const handleSubmit = async () => {
         Inscris toi et tente de remporter l’un des Success Kit* mis en jeu !
       </h2>
       <p class="text-sm text-center text-[#3F1A0D]">
-        * Séance de Coaching, Prévention Santé et Essentiels sportifs dans chaque Success Kit
+        * Séance de Coaching, Atelier prévention Santé et Package sportif dans chaque Success Kit
       </p>
     </section>
 
