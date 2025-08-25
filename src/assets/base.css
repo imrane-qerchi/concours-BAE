@@ -1,5 +1,5 @@
 body {
-  background-image: url('/background.jpg');
+  background-image: url('/background-1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,11 +9,11 @@ body {
 }
 
 .background-dynamic {
-  background-image: url('/background.jpg'); /* mobile/tablette par défaut */
+  background-image: url('/background-1.jpg'); /* mobile/tablette par défaut */
 }
 
 @media (min-width: 1024px) {
   .background-dynamic {
-    background-image: url('/background-icones-desktop.png'); /* desktop */
+    background-image: url('/background-icones-desktop-1.png'); /* desktop */
   }
 }

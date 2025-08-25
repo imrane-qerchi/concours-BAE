@@ -2,7 +2,7 @@
 <template>
   <div
     class="min-h-screen w-full text-black py-12 px-6"
-    style="background-image: url('/background.jpg')"
+    style="background-image: url('/background-1.jpg')"
   >
     <div class="max-w-4xl mx-auto rounded-xl p-8">
       <h1 class="text-3xl font-extrabold text-[#3F1A0D] mb-8">Politique de confidentialité</h1>
