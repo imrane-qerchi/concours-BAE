@@ -10,7 +10,7 @@
       <!-- Liens légaux -->
       <div class="text-sm text-center lg:text-left">
         <div class="flex gap-2 flex-wrap justify-center lg:justify-center mb-2">
-          <RouterLink to="/mentions-legales" class="hover:underline">Mentions légales</RouterLink>
+          <RouterLink to="/mentions-legales" target="_blank" class="hover:underline">Mentions légales</RouterLink>
           <span>|</span>
           <a
             href="https://alumni.univ-fcomte.fr/fr/terms-of-use"
@@ -21,7 +21,7 @@
             CGU
           </a>
           <span>|</span>
-          <RouterLink to="/politique-de-confidentialite" class="hover:underline">
+          <RouterLink to="/politique-de-confidentialite" target="_blank" class="hover:underline">
             Politique de confidentialité
           </RouterLink>
         </div>
