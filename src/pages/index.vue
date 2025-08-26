@@ -156,7 +156,7 @@ const handleSubmit = async () => {
       <p class="text-lg text-center text-[#3F1A0D] mb-5">
         📄 Consulte
         <a
-          href="https://alumni.univ-fcomte.fr/medias/editor/oneshot-images/17925784836864f69ecb835.pdf"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
           class="underline font-bold hover:text-[#742581] transition"
@@ -177,14 +177,12 @@ const handleSubmit = async () => {
       </h2>
       <p class="text-lg text-center text-[#3F1A0D]">
         Besoin d'aide ?<br />🎬 Consulte
-        <a
-          href="/videos/tutoriel-alumni.mp4"
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          @click="showTutorial = true"
           class="underline font-bold hover:text-[#742581] transition"
         >
           notre tutoriel
-        </a>
+        </button>
         ou
         <a
           href="mailto:contact-success-road@univ-fcomte.fr"
@@ -196,5 +194,33 @@ const handleSubmit = async () => {
         !
       </p>
     </section>
+
+    <!-- Pop-up Tutoriel avec fond noir, croix externe et fermeture au clic extérieur -->
+    <div
+      v-if="showTutorial"
+      @click.self="showTutorial = false"
+      class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70"
+    >
+      <!-- Bouton de fermeture externe -->
+      <button
+        @click="showTutorial = false"
+        class="absolute top-7 right-7 text-white text-4xl font-bold hover:text-[#D90D80] z-50"
+        aria-label="Fermer"
+      >
+        ✕
+      </button>
+
+      <!-- Cadre noir transparent autour de la vidéo -->
+      <div class="relative rounded-lg" @click.stop>
+        <!-- Conteneur de la vidéo -->
+        <div class="relative bg-white max-w-3xl w-full rounded-lg shadow-2xl overflow-hidden">
+          <!-- Vidéo locale -->
+          <video controls autoplay class="w-full h-auto rounded-b-lg">
+            <source src="/videos/tutoriel-alumni.mp4" type="video/mp4" />
+            Ton navigateur ne supporte pas la lecture vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
