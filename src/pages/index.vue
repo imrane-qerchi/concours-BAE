@@ -61,7 +61,7 @@ const handleSubmit = async () => {
     class="min-h-screen w-full text-white py-12 px-4 bg-cover bg-center bg-no-repeat background-dynamic"
   >
     <!-- Étapes (titre général) -->
-    <section class="max-w-4xl mx-auto p-6 mt-80 mb-2 z-10 relative">
+    <section class="max-w-4xl mx-auto p-6 mt-80 -mb-4 md:mb-2 z-10 relative">
       <h2 class="text-lg md:text-2xl font-bold text-[#3F1A0D] text-center mb-2">
         Inscris toi et tente de remporter l’un des Success Kit* mis en jeu !
       </h2>
