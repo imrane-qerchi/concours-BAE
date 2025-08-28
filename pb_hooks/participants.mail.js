@@ -1,3 +1,5 @@
+console.log('[hooks] participants.mail.js chargé');
+
 // Envoie un e-mail de confirmation dès qu'un record est créé dans "participants".
 
 onRecordCreateRequest((e) => {
