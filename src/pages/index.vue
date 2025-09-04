@@ -156,7 +156,7 @@ const handleSubmit = async () => {
       <p class="text-lg text-center text-[#3F1A0D] mb-5">
         📄 Consulte
         <a
-          href="https://alumni.univ-fcomte.fr/medias/editor/oneshot-images/74440595568ad71bc32098.pdf"
+          href="https://alumni.univ-fcomte.fr/medias/editor/oneshot-images/135688200268b95ae08f746.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="underline font-bold hover:text-[#742581] transition"
