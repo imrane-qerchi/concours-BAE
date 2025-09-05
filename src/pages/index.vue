@@ -139,7 +139,7 @@ const handleSubmit = async () => {
         <div class="bg-white rounded-xl p-6 max-w-md text-center text-[#3F1A0D] shadow-2xl">
           <h3 class="text-2xl font-bold mb-2">🎉 Inscription validée !</h3>
           <p class="mb-4">
-            Une confirmation de ta participation te sera adressée sur ton e-mail universitaire.
+            N'oublie pas d'effectuer toutes les étapes avant le 9 octobre 2025.
           </p>
           <button
             @click="showPopup = false"
