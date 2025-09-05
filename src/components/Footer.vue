@@ -4,29 +4,33 @@
     <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
       <!-- Logos centrés et cliquables -->
       <div class="flex flex-wrap justify-center gap-6">
-        <a href="https://alumni.univ-fcomte.fr/fr">
+        <a href="https://alumni.univ-fcomte.fr/fr" target="_blank" rel="noopener noreferrer">
           <img src="/alumni.png" alt="Alumni" class="h-22 w-auto hover:opacity-80 transition" />
         </a>
-        <a href="http://u-sports.univ-fcomte.fr/pages/fr/1.0-campus_sports_accueil-14451.html">
+        <a
+          href="http://u-sports.univ-fcomte.fr/pages/fr/1.0-campus_sports_accueil-14451.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/campus-sports.png"
             alt="Campus Sports"
             class="h-22 w-auto hover:opacity-80 transition"
           />
         </a>
-        <a href="https://ose.univ-fcomte.fr/">
+        <a href="https://ose.univ-fcomte.fr/" target="_blank" rel="noopener noreferrer">
           <img src="/ose.png" alt="OSE" class="h-22 w-auto hover:opacity-80 transition" />
         </a>
-        <a href="https://www.bienvenueauxetudiants.org/">
+        <a href="https://www.bienvenueauxetudiants.org/" target="_blank" rel="noopener noreferrer">
           <img src="/bae.png" alt="BAE" class="h-22 w-auto hover:opacity-80 transition" />
         </a>
-        <a href="https://www.umlp.fr/sante">
+        <a href="https://www.umlp.fr/sante" target="_blank" rel="noopener noreferrer">
           <img src="/sse.png" alt="SSE" class="h-22 w-auto hover:opacity-80 transition" />
         </a>
-        <a href="https://larodia.com/">
+        <a href="https://larodia.com/" target="_blank" rel="noopener noreferrer">
           <img src="/larodia.png" alt="La Rodia" class="h-22 w-auto hover:opacity-80 transition" />
         </a>
-        <a href="https://www.lemoloco.com/">
+        <a href="https://www.lemoloco.com/" target="_blank" rel="noopener noreferrer">
           <img src="/moloco.png" alt="Moloco" class="h-22 w-auto hover:opacity-80 transition" />
         </a>
       </div>
