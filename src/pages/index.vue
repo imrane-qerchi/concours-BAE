@@ -185,7 +185,7 @@ const handleSubmit = async () => {
         </button>
         ou
         <a
-          href="mailto:contact-success-road@univ-fcomte.fr"
+          href="mailto:success-road@univ-fcomte.fr"
           target="_blank"
           rel="noopener noreferrer"
           class="underline font-bold hover:text-[#742581] transition"
